@@ -2,16 +2,19 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
 }
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
   -webkit-font-smoothing: antialiased;
+  font-size: 14px;
 }
 
-.App{
+.app{
   background-image: url("../public/images/body-bg.jpg");
   height: 300vh;
   background-size: cover;
