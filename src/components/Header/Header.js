@@ -11,7 +11,7 @@ const Header = () => {
           </div>
           <nav>
             <ul>
-              <li><a href="#">HOME</a></li>
+              <li><a href="#home">HOME</a></li>
               <li><a href="#">TOURNAMENT</a></li>
               <li><a href="#">NEWS</a></li>
               <li><a href="#">CONTACT</a></li>

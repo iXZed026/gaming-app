@@ -2,6 +2,13 @@ header {
     width: 100%;
     background-color: rgb(32, 32, 60);
     position: fixed;
+    animation: headerAni .5s linear 1;
+}
+
+@keyframes headerAni {
+    0%{
+        transform: translate(0,-110px);
+    }
 }
 
 .header-container {
