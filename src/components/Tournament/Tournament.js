@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import "./Tournament.css";
+import Matches from './Matches';
 import { TeamContext } from '../context/TeamProvider';
 
 const Tournament = () => {
@@ -10,7 +11,7 @@ const Tournament = () => {
     console.log(setTeams);
 
     return (
-        <div className="tournament">
+        <div className="tournament" id='tournament'>
             <div className="tournament-container">
                 <div className="tournament-flex">
                     <div className="tournament-info">
@@ -21,15 +22,13 @@ const Tournament = () => {
                         </div>
                     </div>
                     <div className="tournament-matchs">
-                        {
-                            teams.map((team, key) => (
-                                <>
-                                    <h1>{team.firstTeamName}</h1>
-                                    <h1></h1>
-                                    <h1></h1>
-                                </>
-                            ))
-                        }
+                      <div className="tournament-matchs-container">
+                        <div className="tournament-matchs-flex">
+                            {
+                                teams.map((team,key)=><Matches {...team} key={teams.id}/>)
+                            }
+                        </div>
+                      </div>
                     </div>
                 </div>
             </div>
