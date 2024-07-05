@@ -11,6 +11,13 @@
     align-items: center;
 }
 
+@keyframes matchLeftAni {
+    0% {
+        opacity: 0;
+        transform: translate(-230px, 0);
+    }
+}
+
 .left-team .team-logo {
     width: 120px;
     z-index: 1;
@@ -30,7 +37,7 @@
     display: flex;
     justify-content: end;
     align-items: center;
-    background:linear-gradient(to right,rgba(164, 3, 164, 0.425),rgba(0, 191, 255, 0.315));
+    background: linear-gradient(to right, rgba(164, 3, 164, 0.425), rgba(0, 191, 255, 0.315));
     border-top-right-radius: 50px;
 }
 
@@ -38,7 +45,7 @@
     width: 195px;
     margin-left: auto;
     font-size: 22px;
-    color:#ffffffe0;
+    color: #ffffffe0;
 }
 
 .left-team .team-info .group-counter {
@@ -51,7 +58,7 @@
     margin-top: -2%;
 }
 
-.left-team .team-info .group-counter button{
+.left-team .team-info .group-counter button {
     width: 170px;
     height: 40px;
     font-size: 11px;
@@ -62,7 +69,7 @@
     background: linear-gradient(-30deg, rgba(74, 180, 222, 0.799) 30%, rgba(222, 6, 132, 0.881));
     box-shadow: 0 0 4px rgb(100, 252, 252);
     margin-left: 8%;
-    color:#ffffffc5;
+    color: #ffffffc5;
 }
 
 
@@ -74,9 +81,16 @@
     align-items: center;
 }
 
+@keyframes matchRightAni {
+    0% {
+        opacity: 0;
+        transform: translate(230px, 0);
+    }
+}
+
 .right-team .team-logo {
     width: 100px;
-    
+
 }
 
 .right-team .team-logo img {
@@ -94,7 +108,7 @@
     display: flex;
     justify-content: end;
     align-items: center;
-    background:linear-gradient(to right,rgba(164, 3, 164, 0.425),rgba(0, 191, 255, 0.315));
+    background: linear-gradient(to right, rgba(164, 3, 164, 0.425), rgba(0, 191, 255, 0.315));
     border-top-left-radius: 50px;
 }
 
@@ -102,7 +116,7 @@
     width: 190px;
     margin: auto;
     font-size: 22px;
-    color:#ffffffe0;
+    color: #ffffffe0;
 }
 
 .right-team .team-info .group-counter {
@@ -115,7 +129,7 @@
     margin-top: -2%;
 }
 
-.right-team .team-info .group-counter button{
+.right-team .team-info .group-counter button {
     width: 170px;
     height: 40px;
     font-size: 11px;
@@ -126,7 +140,7 @@
     background: linear-gradient(-30deg, rgba(74, 180, 222, 0.799) 30%, rgba(222, 6, 132, 0.881));
     box-shadow: 0 0 4px rgb(100, 252, 252);
     margin-left: 8%;
-    color:#ffffffc5;
+    color: #ffffffc5;
     z-index: 1;
 }
 
@@ -134,17 +148,28 @@
     text-align: center;
 }
 
+.matchStartAnimation{
+    animation: matchStartAni 1s ease-in-out 1;
+}
+
+@keyframes matchStartAni {
+    0%{
+        opacity: 0;
+        transform: translate(0px,50px);
+    }
+}
+
 .match-start h2 {
     font-size: 45px;
 }
 
-.match-start h3{
+.match-start h3 {
     font-size: 11px;
     color: #ffffffbd;
     margin-bottom: 7%;
 }
 
-.match-start div{
+.match-start div {
     display: flex;
     justify-content: center;
     gap: 10px;
