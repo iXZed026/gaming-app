@@ -5,6 +5,7 @@ import Home from './components/Home/Home';
 import Tournament from './components/Tournament/Tournament';
 import News from './components/News/News';
 import { TeamProvider } from './components/context/TeamProvider';
+import { NewsProvider } from './components/context/NewsProvider';
 
 const App = () => {
   return (
@@ -14,7 +15,9 @@ const App = () => {
       <TeamProvider>
         <Tournament />
       </TeamProvider>
-      <News/>
+      <NewsProvider>
+        <News />
+      </NewsProvider>
     </div>
   )
 }
