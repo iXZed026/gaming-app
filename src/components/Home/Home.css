@@ -11,10 +11,20 @@
     display: flex;
     justify-content: center;
     align-items:end;
+    animation: homeTitleAni 1s ease-in-out 1;
+}
+
+@keyframes homeTitleAni {
+    0%{
+        opacity: 0;
+    }40%{
+        opacity: 0;
+    }
 }
 
 .home-title-flex{
-    width: 37%;
+    width: 500px;
+    /* width: 37%; */
     margin: 0 auto;
     text-align: center;
     padding: 3% 0;
@@ -55,6 +65,14 @@
     width: 1200px;
     height: 300px;
     border-bottom: 3px solid purple;
+    animation: heroBgAni 1s ease-in-out 1;
 }
+
+@keyframes heroBgAni {
+    0%{
+        padding-top: 100%;
+    }
+}
+
 
 

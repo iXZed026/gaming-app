@@ -1,0 +1,41 @@
+.news {
+    width: 100%;
+    padding: 3% 0;
+    color: #ffffffda;
+}
+
+.news-container {
+    width: 70%;
+    margin: auto;
+}
+
+.news-title {
+    width: 500px;
+    margin: auto;
+    padding: 8% 0; 
+    text-align: center;
+}
+
+.news-title h4 {
+    margin-bottom: 2%;
+}
+
+.news-title h2 {
+    font-size: 28px;
+    margin-bottom: 2%;
+}
+
+.news-title h2 span {
+    color: rgb(159, 3, 159);
+}
+
+.news-title h5 {
+    font-size: 14px;
+    color: #ffffff8e;
+}
+
+.card-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
