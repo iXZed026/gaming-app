@@ -6,6 +6,7 @@ const UsefulLinks = () => {
     <div className="useful-links">
         <div className="useful-links-title">
             <h5>Usefull Links</h5>
+            <div></div>
         </div>
         <nav>
             <li><a href="#tournaments">Tournamets</a></li>
