@@ -180,3 +180,23 @@
     height: 20px;
     cursor: pointer;
 }
+
+@media screen and (max-width:1280px) {
+    .matches {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 25%;
+    }
+}
+
+@media screen and (max-width:1069px) {
+    .matches {
+        margin-bottom: 33%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .matches {
+        margin-bottom: 50%;
+    }
+}
