@@ -10,9 +10,9 @@
 }
 
 @keyframes cardAni {
-    0%{
+    0% {
         opacity: 0;
-        transform: translate(0,30px);
+        transform: translate(0, 30px);
     }
 }
 
@@ -80,7 +80,7 @@
 }
 
 @keyframes dashIconAni {
-    0%{
+    0% {
         transform: rotate(0deg);
     }
 }
@@ -96,11 +96,24 @@
 }
 
 @keyframes moreAni {
-    0%{
+    0% {
         opacity: 0;
     }
 }
 
 .more h4 {
     color: #ffffff92;
+}
+
+/* Responsive */
+
+@media screen and (max-width:1070px) {
+    .news-card {
+        width: 400px;
+        height: 550px;
+    }
+
+    .card-more {
+        width: 120px;
+    }
 }

@@ -26,3 +26,11 @@
 .useful-links nav li a {
     color: #ffffffd0;
 }
+
+/* Responsive */
+
+@media screen and (max-width:1070px) {
+    .useful-links {
+        width: 400px;
+    }
+}

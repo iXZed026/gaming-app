@@ -37,3 +37,11 @@
 .contact-us-info .phone p {
     color: #ffffffbc;
 }
+
+/* Responsive */
+
+@media screen and (max-width:1070px) {
+    .contact-us {
+        width: 400px;
+    }
+}

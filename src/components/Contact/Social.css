@@ -36,3 +36,11 @@
     background-color: #ffff;
     color: purple;
 }
+
+/* Responsive */
+
+@media screen and (max-width:1070px) {
+    .social {
+        width: 400px;
+    }
+}
