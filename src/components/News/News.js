@@ -8,7 +8,7 @@ const News = () => {
     const news = useContext(NewsContext).news;
 
     return (
-        <div className="news">
+        <div className="news" id='news'>
             <div className="news-container">
                 <div className="news-flex">
                     <div className="news-title">

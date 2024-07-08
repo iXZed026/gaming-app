@@ -31,7 +31,7 @@ const Matches = (props) => {
             }
         }
 
-        let scrollDom = window.addEventListener("scroll",scrollHandler);
+         window.addEventListener("scroll",scrollHandler);
 
     },[])
 
