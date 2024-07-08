@@ -1,0 +1,39 @@
+.contact-us {
+    width: 24%;
+}
+
+.contact-us-title {
+    font-size: 19px;
+    padding: 1% 0;
+    margin-bottom: 4%;
+}
+
+.contact-us-title h5 {
+    margin-bottom: 1%;
+}
+
+.contact-us-title div {
+    width: 25%;
+    height: 3px;
+    background-color: rgb(202, 6, 202);
+    border-radius: 10px;
+}
+
+.contact-us-info .location,
+.contact-us-info .join-us,
+.contact-us-info .phone {
+    margin-bottom: 6%;
+}
+
+.contact-us-info .location span,
+.contact-us-info .join-us span,
+.contact-us-info .phone span {
+    color: rgb(222, 44, 222);
+    font-weight: bold;
+}
+
+.contact-us-info .location p,
+.contact-us-info .join-us p,
+.contact-us-info .phone p {
+    color: #ffffffbc;
+}

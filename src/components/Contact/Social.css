@@ -2,6 +2,10 @@
     width: 23%;
 }
 
+.social img {
+    width: 80%;
+}
+
 .social h3 {
     color: #ffffffaa;
     font-size: 14px;
