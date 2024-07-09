@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import "./NewsCard.css";
 import { FaCalendarWeek } from "react-icons/fa";
 import { FaUser } from "react-icons/fa";
@@ -9,14 +9,34 @@ const NewCard = (props) => {
     const { id, img, title, date, more } = props;
 
     const [moreInfo, setMoreInfo] = useState(false);
+    const [animation,setAnimation] = useState(false);
 
     const moreInfoHandler = () => {
         setMoreInfo(!moreInfo)
     }
 
+    useEffect(() => {
+        const scrollHandler = (e) => {
+
+            const currentScroll = Math.round(window.scrollY);
+
+            console.log(window.scrollY);
+
+            if (currentScroll > 1400) {
+                setAnimation(true);
+            } else {
+                setAnimation(false);
+            }
+
+            
+        }
+        window.addEventListener("scroll", scrollHandler);
+
+    }, [])
+
     return (
         <>
-            <div className="news-card">
+            <div className={animation ? "news-card news-card-animation" : "news-card"} style={!animation ? {opacity:"0"}:{opacity:"1"}}>
                 <div className="card-news-image">
                     <img src={img} alt="image not found!" />
                 </div>

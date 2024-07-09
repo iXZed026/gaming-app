@@ -12,10 +12,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   font-size: 14px;
+  background-image: url("../public/images/body-bg.jpg");
 }
 
-.app {
-  background-image: url("../public/images/body-bg.jpg");
-  /* background-repeat: repeat-y; */
-  background-size: cover;
-}

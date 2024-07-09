@@ -7,8 +7,8 @@ header {
 }
 
 @keyframes headerAni {
-    0%{
-        transform: translate(0,-110px);
+    0% {
+        transform: translate(0, -110px);
     }
 }
 
@@ -44,6 +44,12 @@ header {
     margin-right: 5%;
 }
 
+.header-flex nav ul li a:hover {
+    transition: .3s;
+    color: rgb(204, 77, 204);
+    text-decoration: underline;
+}
+
 .header-flex .join-team-button button {
     width: 140px;
     height: 35px;
@@ -58,4 +64,116 @@ header {
 .header-flex .join-team-button button:hover {
     transition: 0.4s;
     opacity: 0.7;
+}
+
+.humburger {
+    width: 45px;
+    display: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.humburger .humb-line {
+    width: 45px;
+    height: 2px;
+    background: linear-gradient(to right, rgb(194, 61, 194), rgb(12, 215, 215));
+    border-radius: 10px;
+    margin-bottom: 8px;
+}
+
+.top-line {
+    width: 25px;
+    height: 2px;
+    background: linear-gradient(to right, rgb(217, 111, 217), cyan);
+    border-radius: 10px;
+    margin-bottom: 8px;
+    position: absolute;
+    left: 0;
+    transform: rotate(45deg);
+    animation: humbAni .2s linear 1;
+}
+
+.bottom-line {
+    width: 25px;
+    height: 2px;
+    background: linear-gradient(to right, rgb(217, 111, 217), cyan);
+    border-radius: 10px;
+    margin-bottom: 8px;
+    position: absolute;
+    left: 0;
+    transform: rotate(-45deg);
+    animation: humbAni .2s linear 1;
+}
+
+@keyframes humbAni {
+    0% {
+        transform: rotate(0);
+    }
+}
+
+
+/* Responsive */
+
+@media screen and (max-width:1070px) {
+    .header-container {
+        width: 90%;
+    }
+}
+
+
+/* @media screen and (max-width:1070px) {
+} */
+
+
+
+@media screen and (max-width:900px) {
+    .header-flex nav {
+        display: none;
+        width: 100%;
+    }
+
+    .header-flex .join-team-button {
+        display: none;
+    }
+
+    .humburger {
+        display: block;
+    }
+
+    nav.active {
+        width: 100%;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgb(25, 25, 70);
+        border-bottom: 3px solid rgb(217, 47, 112);
+        animation: navAni .6s ease-in-out 1;
+    }
+
+    @keyframes navAni {
+        0% {
+            transform: translate(0, -300px);
+        }
+    }
+
+    ul.active {
+        padding: 4% 0;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .header-flex .join-team-button.active {
+        position: absolute;
+        display: block;
+        left: 0;
+        animation: buttonAni 1s ease-in-out 1;
+    }
+
+    @keyframes buttonAni {
+        0% {
+            transform: translate(-300px, 0);
+        }
+    }
+
 }

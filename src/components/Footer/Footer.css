@@ -1,0 +1,19 @@
+footer {
+    height: 60px;
+    background-position: center;
+    background-color: rgb(17, 17, 47);
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+footer .footer-container {
+    width: 70%;
+    margin: auto;
+}
+
+.footer-flex h3{
+    font-size: 14px;
+    color: #ffffffb7;
+    word-spacing: 3px;
+}

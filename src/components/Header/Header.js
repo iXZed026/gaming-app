@@ -13,8 +13,8 @@ const Header = () => {
             <ul>
               <li><a href="#home">HOME</a></li>
               <li><a href="#tournament">TOURNAMENT</a></li>
-              <li><a href="#">NEWS</a></li>
-              <li><a href="#">CONTACT</a></li>
+              <li><a href="#news">NEWS</a></li>
+              <li><a href="#contact">CONTACT</a></li>
             </ul>
           </nav>
           <div className="join-team-button">

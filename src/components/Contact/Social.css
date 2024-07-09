@@ -1,0 +1,46 @@
+.social {
+    width: 23%;
+}
+
+.social img {
+    width: 80%;
+}
+
+.social h3 {
+    color: #ffffffaa;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 4%;
+}   
+
+.social .social-media-logos {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.social .social-media-logos svg {
+    width: 27px;
+    height: 27px;
+    background-color: purple;
+    padding: 6px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    cursor: pointer;
+}
+
+.social .social-media-logos svg:hover {
+    transition: .4s;
+    background-color: #ffff;
+    color: purple;
+}
+
+/* Responsive */
+
+@media screen and (max-width:1070px) {
+    .social {
+        width: 400px;
+    }
+}
