@@ -1,7 +1,34 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import "./Header.css";
 
 const Header = () => {
+
+  const [humburgerStyle, setHumburgerStyle] = useState(false)
+
+  const activeHumburger = () => {
+    setHumburgerStyle(!humburgerStyle);
+  }
+
+  useEffect(() => {
+
+    const closeHumburger = () => {
+      setHumburgerStyle(false);
+    }
+
+    const liElems = document.querySelectorAll("#list");
+
+    liElems.forEach(elem => {
+      elem.addEventListener("click", closeHumburger);
+    });
+
+    return () => {
+      liElems.forEach(elem => {
+        elem.removeEventListener("click", closeHumburger);
+      });
+    }
+
+  }, [])
+
   return (
     <header>
       <div className="header-container">
@@ -9,16 +36,21 @@ const Header = () => {
           <div className="header-logo">
             <img src="../../images/logo.png" alt="" />
           </div>
-          <nav>
-            <ul>
-              <li><a href="#home">HOME</a></li>
-              <li><a href="#tournament">TOURNAMENT</a></li>
-              <li><a href="#news">NEWS</a></li>
-              <li><a href="#contact">CONTACT</a></li>
+          <nav className={humburgerStyle ? "active" : ""}>
+            <ul className={humburgerStyle ? "active" : ""}>
+              <li><a href="#home" id='list'>HOME</a></li>
+              <li><a href="#tournament" id='list'>TOURNAMENT</a></li>
+              <li><a href="#news" id='list'>NEWS</a></li>
+              <li><a href="#contact" id='list'>CONTACT</a></li>
             </ul>
           </nav>
-          <div className="join-team-button">
+          <div className={humburgerStyle ? "join-team-button active" : "join-team-button"}>
             <button type="submit">join our team</button>
+          </div>
+          <div className="humburger" onClick={activeHumburger}>
+            <div className={humburgerStyle ? "top-line" : "humb-line"}></div>
+            <div className='humb-line' style={{ display: humburgerStyle ? "none" : "block" }}></div>
+            <div className={humburgerStyle ? "bottom-line" : "humb-line"}></div>
           </div>
         </div>
       </div>
