@@ -1,4 +1,4 @@
-.tournament{
+.tournament {
     color: #ffff;
 }
 
@@ -12,29 +12,41 @@
     margin: auto;
 }
 
-.tournament-info h4{
+.tournament-info h4 {
     margin-bottom: 2%;
 }
 
-.tournament-info h1{
+.tournament-info h1 {
     margin-bottom: 2%;
     font-size: 35px;
 }
 
 .tournament-info h1 span {
-    color: rgb(128, 0, 128);    
+    color: rgb(128, 0, 128);
 }
 
-.tournament-info h5{
+.tournament-info h5 {
     color: rgba(255, 255, 255, 0.597);
     margin-bottom: 2%;
     font-size: 14px;
 }
 
 
-.tournament-matchs-container{
+.tournament-matchs-container {
     width: 65%;
     margin: auto;
 }
 
+@media screen and (max-width:501px) {
+    .tournament-info div {
+        width: 90%;
+        margin: auto;
+    }
+}
 
+@media screen and (max-width:400px) {
+    .tournament-info div {
+        width: 90%;
+        margin: auto;
+    }
+}

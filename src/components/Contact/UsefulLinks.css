@@ -34,3 +34,10 @@
         width: 400px;
     }
 }
+
+@media screen and (max-width:501px) {
+
+    .useful-links {
+        width: 90%;
+    }
+}

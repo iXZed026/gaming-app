@@ -117,3 +117,9 @@
         width: 120px;
     }
 }
+
+@media screen and (max-width:500px) {
+    .news-card {
+        width: 85%;
+    }
+}

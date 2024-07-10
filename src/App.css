@@ -15,3 +15,25 @@ body {
   background-image: url("../public/images/body-bg.jpg");
 }
 
+@media screen and (max-width:900px) {
+  body {
+    background-position: top;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a; /* رنگ پس زمینه اسکرول بار */
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(90deg, #ff00cc 0%, #3333ff 100%); /* رنگ اسکرول بار */
+  border-radius: 1px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(90deg, #ff00cc 0%, #6600ff 100%); /* رنگ اسکرول بار هنگام هاور */
+}

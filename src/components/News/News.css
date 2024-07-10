@@ -56,3 +56,15 @@
         gap: 30px;
     }
 }
+
+@media screen and (max-width:501px) {
+    .news-title {
+        width: 90%;
+        margin: auto;
+    }
+
+    .news-container {
+        width: 100%;
+    }
+    
+}

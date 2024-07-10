@@ -44,3 +44,10 @@
         width: 400px;
     }
 }
+
+@media screen and (max-width:501px) {
+
+    .social {
+        width: 90%;
+    }
+}
