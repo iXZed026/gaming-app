@@ -8,8 +8,6 @@ const Tournament = () => {
     const teams = useContext(TeamContext).teams;
     const setTeams = useContext(TeamContext).setTeams;
 
-    console.log(setTeams);
-
     return (
         <div className="tournament" id='tournament'>
             <div className="tournament-container">
@@ -25,7 +23,7 @@ const Tournament = () => {
                       <div className="tournament-matchs-container">
                         <div className="tournament-matchs-flex">
                             {
-                                teams.map((team,key)=><Matches {...team} key={teams.id}/>)
+                                teams.map((team,key)=><Matches {...team} key={team.id}/>)
                             }
                         </div>
                       </div>

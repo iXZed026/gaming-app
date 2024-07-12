@@ -20,8 +20,6 @@ const NewCard = (props) => {
 
             const currentScroll = Math.round(window.scrollY);
 
-            console.log(window.scrollY);
-
             if (currentScroll > 1400) {
                 setAnimation(true);
             } else {
@@ -32,8 +30,14 @@ const NewCard = (props) => {
         }
         window.addEventListener("scroll", scrollHandler);
 
+        
+        return ()=>{
+            window.removeEventListener("scroll", scrollHandler);
+        }
+        
     }, [])
-
+    
+    
     return (
         <>
             <div className={animation ? "news-card news-card-animation" : "news-card"} style={!animation ? {opacity:"0"}:{opacity:"1"}}>

@@ -33,6 +33,12 @@ const Matches = (props) => {
 
          window.addEventListener("scroll",scrollHandler);
 
+         return ()=>{
+
+            window.removeEventListener("scroll",scrollHandler);
+            
+         }
+
     },[])
 
     return (

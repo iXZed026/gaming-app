@@ -100,9 +100,3 @@
     }
 
 }
-
-@media screen and (max-width:501px) {
-    .home {
-        height: 93vh;
-    }
-}
