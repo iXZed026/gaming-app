@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/gaming-app/static/css/main.70301899.css",
-    "main.js": "/gaming-app/static/js/main.22ccbf13.js",
+    "main.js": "/gaming-app/static/js/main.bb4dec9d.js",
     "static/media/body-bg.jpg": "/gaming-app/static/media/body-bg.54b8d73e86dc46ce49ed.jpg",
     "index.html": "/gaming-app/index.html",
     "main.70301899.css.map": "/gaming-app/static/css/main.70301899.css.map",
-    "main.22ccbf13.js.map": "/gaming-app/static/js/main.22ccbf13.js.map"
+    "main.bb4dec9d.js.map": "/gaming-app/static/js/main.bb4dec9d.js.map"
   },
   "entrypoints": [
     "static/css/main.70301899.css",
-    "static/js/main.22ccbf13.js"
+    "static/js/main.bb4dec9d.js"
   ]
 }
